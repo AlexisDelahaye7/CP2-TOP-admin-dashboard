@@ -14,8 +14,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+h2{
+    font-size: 1.3rem;
+}
+
 h3{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -94,10 +100,12 @@ body{
 }
 
 .user-area{
-    display: grid;
-    grid-template: 1fr / repeat(3, 1fr) 2fr;
-    justify-content: center;
-    gap: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+.user-area img{
+    margin: 0 var(--elements-margin);
 }
 
 .user-area span{
@@ -167,7 +175,7 @@ body{
 
 #projects-grid{
     display: grid;
-    gap: var(--elements-margin);
+    gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
@@ -191,19 +199,77 @@ body{
 .project-content{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 20% 1fr 20%;
+    padding: var(--elements-margin);
 }
 
 .project-content p{
     color: var(--text-grey);
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .project-buttons{
+    display: flex;
     justify-content: right;
     align-self: right;
 }
 
 .project-buttons img{
     height: var(--img-size-small);
+    margin-left: var(--elements-margin);
+}
+
+#sidebar{
+    display: grid;
+    min-height: 100%;
+    align-content: space-between;
+}
+
+#annonces-grid{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: var(--elements-margin);
+    display: grid;
+    gap: 5px;
+}
+
+#annonces-grid h3{
+    font-size: 1rem;
+}
+
+#annonces-grid p{
+    margin: 0;
+    color: var(--text-grey);
+    font-size: .9rem;
+}
+
+hr{
+    border-top: 1px solid var(--second-grey);
+    width: 100%;
+}
+
+#trending-grid{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: var(--elements-margin) ;
+    
+}
+
+#trending-grid > div{
+    display: flex;
+}
+
+#trending-grid > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: var(--elements-margin);
+}
+
+.user-moto{
+    color: var(--text-grey);
+    margin-top: 5px;
 }
