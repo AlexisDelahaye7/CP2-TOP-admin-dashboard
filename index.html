@@ -1,215 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <div class="navbar">
-            <div class="navbar-item" id="navbar-title">
-                <img src="img/grid.svg" alt="Dashboard">
-                <span>Dashboard</span>
-            </div>
-            <div class="navbar-item"></div>
-            <div class="navbar-item">
-                <img src="img/home.svg" alt="Home" class="icon-small">
-                <span>Home</span>
-            </div>
-            <div class="navbar-item">
-                <img src="img/profile.svg" alt="Profile" class="icon-small">
-                <span>Profile</span>
-            </div>
-            <div class="navbar-item">
-                <img src="img/messages.svg" alt="Messages" class="icon-small">
-                <span>Messages</span>
-            </div>
-            <div class="navbar-item">
-                <img src="img/history.svg" alt="History" class="icon-small">
-                <span>History</span>
-            </div>
-            <div class="navbar-item">
-                <img src="img/tasks.svg" alt="Tasks" class="icon-small">
-                <span>Tasks</span>
-            </div>
-            <div class="navbar-item">
-                <img src="img/communities.svg" alt="Communities" class="icon-small">
-                <span>Communities</span>
-            </div>
-            <div class="navbar-item"></div>
-            <div class="navbar-item">
-                <img src="img/settings.svg" alt="Settings" class="icon-small">
-                <span>Settings</span>
-            </div>
-            <div class="navbar-item">
-                <img src="img/support.svg" alt="Support" class="icon-small">
-                <span>Support</span>
-            </div>
-            <div class="navbar-item">
-                <img src="img/privacy.svg" alt="Privacy" class="icon-small">
-                <span>Privacy</span>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__item" id="navbar__title">
+        <img class="navbar__item__img" src="img/grid.svg" alt="Dashboard" />
+        <h1 class="navbar__item__name">Dashboard</h1>
+      </div>
+      <div class="navbar__content">
+        <div class="navbar__content__first">
+          <div class="navbar__item"></div>
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/home.svg" alt="Home" class="icon--small" />
+            <span class="navbar__item__name">Home</span>
+          </div>
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/profile.svg" alt="Profile" class="icon--small" />
+            <span class="navbar__item__name">Profile</span>
+          </div>
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/messages.svg" alt="Messages" class="icon--small" />
+            <span class="navbar__item__name">Messages</span>
+          </div>
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/history.svg" alt="History" class="icon--small" />
+            <span class="navbar__item__name">History</span>
+          </div>
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/tasks.svg" alt="Tasks" class="icon--small" />
+            <span class="navbar__item__name">Tasks</span>
+          </div>
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/communities.svg" alt="Communities" class="icon--small" />
+            <span class="navbar__item__name">Communities</span>
+          </div>
         </div>
-        <div class="header">
-            <div class="search-area">
-                <img src="img/magnify.svg" alt="Search" class="icon-small">
-                <input type="text">
-            </div>
-            <div class="user-area">
-                <img src="img/notifications.svg" class="icon-small" alt="Notifications">
-                <img src="img/user-icon.svg" alt="user icon" class="users-icons">
-                <span>Alex Mrsh</span>
-            </div>
-            <div class="welcome-area">
-                <img src="img/user-icon.svg" alt="user icon" id="welcome-user-icon">
-                <div>
-                    <span id="welcome-message">Hi there,</span>
-                    <span id="welcome-user">Alex Mrsh (@AlexMrsh)</span>
-                </div>
-            </div>
-            <div class="interact-area">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
-            </div>
+        <div class="navbar__content__second">
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/settings.svg" alt="Settings" class="icon--small" />
+            <span class="navbar__item__name">Settings</span>
+          </div>
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/support.svg" alt="Support" class="icon--small" />
+            <span class="navbar__item__name">Support</span>
+          </div>
+          <div class="navbar__item">
+            <img class="navbar__item__img" src="img/privacy.svg" alt="Privacy" class="icon--small" />
+            <span class="navbar__item__name">Privacy</span>
+          </div>
         </div>
-        <div class="content">
-            <div id="projects">
-                <h2>Your Projects</h2>
-                <div id="projects-grid">
-                    <div>
-                        <div class="color-line"></div>
-                        <div class="project-content">
-                            <h3>Super Cool Project</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
-                            <div class="project-buttons">
-                                <img src="img/star.svg" alt="star">
-                                <img src="img/eye.svg" alt="eye">
-                                <img src="img/share.svg" alt="share">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="color-line"></div>
-                        <div class="project-content">
-                            <h3>Super Cool Project</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
-                            <div class="project-buttons">
-                                <img src="img/star.svg" alt="star">
-                                <img src="img/eye.svg" alt="eye">
-                                <img src="img/share.svg" alt="share">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="color-line"></div>
-                        <div class="project-content">
-                            <h3>Super Cool Project</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
-                            <div class="project-buttons">
-                                <img src="img/star.svg" alt="star">
-                                <img src="img/eye.svg" alt="eye">
-                                <img src="img/share.svg" alt="share">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="color-line"></div>
-                        <div class="project-content">
-                            <h3>Super Cool Project</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
-                            <div class="project-buttons">
-                                <img src="img/star.svg" alt="star">
-                                <img src="img/eye.svg" alt="eye">
-                                <img src="img/share.svg" alt="share">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="color-line"></div>
-                        <div class="project-content">
-                            <h3>Super Cool Project</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
-                            <div class="project-buttons">
-                                <img src="img/star.svg" alt="star">
-                                <img src="img/eye.svg" alt="eye">
-                                <img src="img/share.svg" alt="share">
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="color-line"></div>
-                        <div class="project-content">
-                            <h3>Super Cool Project</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
-                            <div class="project-buttons">
-                                <img src="img/star.svg" alt="star">
-                                <img src="img/eye.svg" alt="eye">
-                                <img src="img/share.svg" alt="share">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="sidebar">
-                <div id="annonces">
-                    <h2>Announcements</h2>
-                    <div id="annonces-grid">
-                        <div>
-                            <h3>Site Maintenance</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h3>Site Maintenance</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h3>Site Maintenance</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="trending">
-                    <h2>Trending</h2>
-                    <div id="trending-grid">
-                        <div>
-                            <img src="img/user-icon.svg" alt="user icon" class="users-icons">
-                            <div>
-                                <span>@tegan</span>
-                                <span class="user-moto">World Peace Builder</span>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="img/user-icon.svg" alt="user icon" class="users-icons">
-                            <div>
-                                <span>@tegan</span>
-                                <span class="user-moto">World Peace Builder</span>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="img/user-icon.svg" alt="user icon" class="users-icons">
-                            <div>
-                                <span>@tegan</span>
-                                <span class="user-moto">World Peace Builder</span>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="img/user-icon.svg" alt="user icon" class="users-icons">
-                            <div>
-                                <span>@tegan</span>
-                                <span class="user-moto">World Peace Builder</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="search-container">
+        <img src="img/magnify.svg" alt="Search" class="icon--small" />
+        <input type="text" />
+      </div>
+      <div class="user-container">
+        <img src="img/notifications.svg" class="icon--small" alt="Notifications" />
+        <img src="img/user-icon.svg" alt="user icon" class="user-icon" />
+        <span class="user-container__fullname">Alexis Delahaye</span>
+      </div>
+      <div class="welcome-container">
+        <img src="img/user-icon.svg" alt="user icon" id="welcome-user-icon" />
+        <div class="welcome-container__text">
+          <span id="welcome-container__greetings">Hi there,</span>
+          <h2 id="welcome-container__username">AlexisDelahaye7 (@AlexisDelahaye7)</h2>
         </div>
-    </div>
-</body>
+      </div>
+      <div class="interact-container">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </header>
+    <main class="main">
+      <div id="main__projects">
+        <h2>Your Projects</h2>
+        <div id="projects__container">
+          <div class="projects__project">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
+                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
+                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
+                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
+                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
+                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
+                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
+                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
+                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
+                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
+                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
+                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
+                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main__sidebar">
+        <div id="sidebar__announcements">
+          <h2 class="announcements__title">Announcements</h2>
+          <div id="announcements__container">
+            <div class="announcement">
+              <h3 class="announcement__title">Site Maintenance</h3>
+              <p class="announcement__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
+            </div>
+            <hr />
+            <div class="announcement">
+              <h3 class="announcement__title">Site Maintenance</h3>
+              <p class="announcement__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
+            </div>
+            <hr />
+            <div class="announcement">
+              <h3 class="announcement__title">Site Maintenance</h3>
+              <p class="announcement__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
+            </div>
+          </div>
+        </div>
+        <div id="sidebar__trendings">
+          <h2>Trending</h2>
+          <div id="trendings__container">
+            <div class="trending">
+              <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
+              <div>
+                <span class="trending__user-name">@tegan</span>
+                <span class="trending__user-moto">World Peace Builder</span>
+              </div>
+            </div>
+            <div class="trending">
+              <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
+              <div>
+                <span class="trending__user-name">@tegan</span>
+                <span class="trending__user-moto">World Peace Builder</span>
+              </div>
+            </div>
+            <div class="trending">
+              <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
+              <div>
+                <span class="trending__user-name">@tegan</span>
+                <span class="trending__user-moto">World Peace Builder</span>
+              </div>
+            </div>
+            <div class="trending">
+              <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
+              <div>
+                <span class="trending__user-name">@tegan</span>
+                <span class="trending__user-moto">World Peace Builder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

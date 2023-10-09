@@ -1,0 +1,16 @@
+{
+  "name": "cp2-admin-dashboard",
+  "version": "1.0.0",
+  "description": "[Coding *Admin Dashboard* Project from The Odin Project Curriculum](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1"
+  }
+}
