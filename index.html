@@ -12,46 +12,46 @@
   <body>
     <!-- NAV -->
     <nav class="navbar">
-      <div id="navbar__title">
+      <header id="navbar__header">
         <img class="navbar__item__img" src="img/grid.svg" alt="Dashboard" />
         <h1 class="navbar__item__name">Dashboard</h1>
-      </div>
+      </header>
       <main class="navbar__content">
         <ul class="navbar__content__first">
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/home.svg" alt="Home" class="icon--small" />
-              <span class="navbar__item__name">Home</span>
+              <h2 class="navbar__item__name">Home</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/profile.svg" alt="Profile" class="icon--small" />
-              <span class="navbar__item__name">Profile</span>
+              <h2 class="navbar__item__name">Profile</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/messages.svg" alt="Messages" class="icon--small" />
-              <span class="navbar__item__name">Messages</span>
+              <h2 class="navbar__item__name">Messages</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/history.svg" alt="History" class="icon--small" />
-              <span class="navbar__item__name">History</span>
+              <h2 class="navbar__item__name">History</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/tasks.svg" alt="Tasks" class="icon--small" />
-              <span class="navbar__item__name">Tasks</span>
+              <h2 class="navbar__item__name">Tasks</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/communities.svg" alt="Communities" class="icon--small" />
-              <span class="navbar__item__name">Communities</span>
+              <h2 class="navbar__item__name">Communities</h2>
             </a>
           </li>
         </ul>
@@ -59,19 +59,19 @@
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/settings.svg" alt="Settings" class="icon--small" />
-              <span class="navbar__item__name">Settings</span>
+              <h2 class="navbar__item__name">Settings</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/support.svg" alt="Support" class="icon--small" />
-              <span class="navbar__item__name">Support</span>
+              <h2 class="navbar__item__name">Support</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
               <img class="navbar__item__img" src="img/privacy.svg" alt="Privacy" class="icon--small" />
-              <span class="navbar__item__name">Privacy</span>
+              <h2 class="navbar__item__name">Privacy</h2>
             </a>
           </li>
         </ul>
@@ -80,7 +80,7 @@
 
     <!-- HEADER -->
     <header class="header block--white">
-      <div class="search-container">
+      <section class="search-container">
         <button id="header__navbar-link"><img class="navbar__item__img" src="img/burger-menu.svg" alt="Dashboard" /></button>
         <form class="search-form" method="GET" action="">
           <label for="search-input">
@@ -90,24 +90,23 @@
             </button>
           </label>
         </form>
-      </div>
-      <div class="user-container">
-        <img src="img/notifications.svg" class="icon--small" alt="Notifications" />
-        <img src="img/user-icon.svg" alt="user icon" class="user-icon" />
-        <span class="user-container__fullname">Alexis Delahaye</span>
-      </div>
-      <div class="welcome-container">
+      </section>
+      <section class="user-container">
+        <button><img src="img/notifications.svg" class="icon--small" alt="Notifications" /></button>
+        <button><img src="img/user-icon.svg" alt="user icon" class="user-icon" /> <span class="user-container__fullname">Alexis Delahaye</span></button>
+      </section>
+      <section class="welcome-container">
         <img src="img/user-icon.svg" alt="user icon" id="welcome-user-icon" />
         <div class="welcome-container__text">
           <span id="welcome-container__greetings">Hi there,</span>
           <h2 id="welcome-container__username">Alexis <em>(@AlexisDelahaye7)</em></h2>
         </div>
-      </div>
-      <div class="interact-container">
+      </section>
+      <section class="interact-container">
         <button>New</button>
         <button>Upload</button>
         <button>Share</button>
-      </div>
+      </section>
     </header>
 
     <!-- MAIN -->

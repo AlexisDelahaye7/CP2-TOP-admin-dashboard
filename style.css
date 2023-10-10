@@ -92,8 +92,23 @@ body {
   gap: calc(var(--block-padding) * 2);
 }
 
+.user-container > button {
+  border: none;
+  background-color: transparent;
+}
+
+.user-container > button:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: var(--block-padding);
+}
+
+.user-container > button:hover {
+  cursor: pointer;
+}
+
 .user-container__fullname {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -169,12 +184,12 @@ body {
   gap: var(--block-padding);
 }
 
-#navbar__title {
+#navbar__header {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-#navbar__title,
+#navbar__header,
 .navbar__item > a {
   display: flex;
   align-items: center;
