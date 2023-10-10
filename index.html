@@ -9,60 +9,81 @@
     <title>Admin Dashboard</title>
   </head>
   <body>
+    <!-- NAV -->
     <nav class="navbar">
-      <div class="navbar__item" id="navbar__title">
+      <div id="navbar__title">
         <img class="navbar__item__img" src="img/grid.svg" alt="Dashboard" />
         <h1 class="navbar__item__name">Dashboard</h1>
       </div>
-      <div class="navbar__content">
-        <div class="navbar__content__first">
-          <div class="navbar__item"></div>
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/home.svg" alt="Home" class="icon--small" />
-            <span class="navbar__item__name">Home</span>
-          </div>
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/profile.svg" alt="Profile" class="icon--small" />
-            <span class="navbar__item__name">Profile</span>
-          </div>
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/messages.svg" alt="Messages" class="icon--small" />
-            <span class="navbar__item__name">Messages</span>
-          </div>
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/history.svg" alt="History" class="icon--small" />
-            <span class="navbar__item__name">History</span>
-          </div>
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/tasks.svg" alt="Tasks" class="icon--small" />
-            <span class="navbar__item__name">Tasks</span>
-          </div>
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/communities.svg" alt="Communities" class="icon--small" />
-            <span class="navbar__item__name">Communities</span>
-          </div>
-        </div>
-        <div class="navbar__content__second">
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/settings.svg" alt="Settings" class="icon--small" />
-            <span class="navbar__item__name">Settings</span>
-          </div>
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/support.svg" alt="Support" class="icon--small" />
-            <span class="navbar__item__name">Support</span>
-          </div>
-          <div class="navbar__item">
-            <img class="navbar__item__img" src="img/privacy.svg" alt="Privacy" class="icon--small" />
-            <span class="navbar__item__name">Privacy</span>
-          </div>
-        </div>
-      </div>
+      <main class="navbar__content">
+        <ul class="navbar__content__first">
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/home.svg" alt="Home" class="icon--small" />
+              <span class="navbar__item__name">Home</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/profile.svg" alt="Profile" class="icon--small" />
+              <span class="navbar__item__name">Profile</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/messages.svg" alt="Messages" class="icon--small" />
+              <span class="navbar__item__name">Messages</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/history.svg" alt="History" class="icon--small" />
+              <span class="navbar__item__name">History</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/tasks.svg" alt="Tasks" class="icon--small" />
+              <span class="navbar__item__name">Tasks</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/communities.svg" alt="Communities" class="icon--small" />
+              <span class="navbar__item__name">Communities</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar__content__second">
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/settings.svg" alt="Settings" class="icon--small" />
+              <span class="navbar__item__name">Settings</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/support.svg" alt="Support" class="icon--small" />
+              <span class="navbar__item__name">Support</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#">
+              <img class="navbar__item__img" src="img/privacy.svg" alt="Privacy" class="icon--small" />
+              <span class="navbar__item__name">Privacy</span>
+            </a>
+          </li>
+        </ul>
+      </main>
     </nav>
-    <header class="header">
-      <div class="search-container">
-        <img src="img/magnify.svg" alt="Search" class="icon--small" />
+
+    <!-- HEADER -->
+    <header class="header block--white">
+      <form class="search-container" method="GET" action="">
+        <button id="header__navbar-link"><img class="navbar__item__img" src="img/burger-menu.svg" alt="Dashboard" /></button>
+        <button type="submit"><img src="img/magnify.svg" alt="Search" class="icon--small" /></button>
         <input type="text" />
-      </div>
+      </form>
       <div class="user-container">
         <img src="img/notifications.svg" class="icon--small" alt="Notifications" />
         <img src="img/user-icon.svg" alt="user icon" class="user-icon" />
@@ -81,138 +102,226 @@
         <button>Share</button>
       </div>
     </header>
+
+    <!-- MAIN -->
     <main class="main">
+      <!-- ARTICLES -->
       <div id="main__projects">
-        <h2>Your Projects</h2>
+        <h2 id="main__title">Your Projects</h2>
         <div id="projects__container">
-          <div class="projects__project">
+          <article class="project block--white">
             <div class="project__color-line"></div>
             <div class="project__content">
               <h3 class="project__content--title">Super Cool Project</h3>
-              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
               <div class="project__buttons">
-                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
-                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
-                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
               </div>
             </div>
-          </div>
-          <div class="project">
+          </article>
+          <article class="project block--white">
             <div class="project__color-line"></div>
             <div class="project__content">
               <h3 class="project__content--title">Super Cool Project</h3>
-              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
               <div class="project__buttons">
-                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
-                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
-                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
               </div>
             </div>
-          </div>
-          <div class="project">
+          </article>
+          <article class="project block--white">
             <div class="project__color-line"></div>
             <div class="project__content">
               <h3 class="project__content--title">Super Cool Project</h3>
-              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
               <div class="project__buttons">
-                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
-                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
-                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
               </div>
             </div>
-          </div>
-          <div class="project">
+          </article>
+          <article class="project block--white">
             <div class="project__color-line"></div>
             <div class="project__content">
               <h3 class="project__content--title">Super Cool Project</h3>
-              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
               <div class="project__buttons">
-                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
-                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
-                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
               </div>
             </div>
-          </div>
-          <div class="project">
+          </article>
+          <article class="project block--white">
             <div class="project__color-line"></div>
             <div class="project__content">
               <h3 class="project__content--title">Super Cool Project</h3>
-              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
               <div class="project__buttons">
-                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
-                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
-                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
               </div>
             </div>
-          </div>
-          <div class="project">
+          </article>
+          <article class="project block--white">
             <div class="project__color-line"></div>
             <div class="project__content">
               <h3 class="project__content--title">Super Cool Project</h3>
-              <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
               <div class="project__buttons">
-                <button><img class="project__buttons__img" src="img/star.svg" alt="star" /></button>
-                <button><img class="project__buttons__img" src="img/eye.svg" alt="watch" /></button>
-                <button><img class="project__buttons__img" src="img/share.svg" alt="share" /></button>
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
               </div>
             </div>
-          </div>
+          </article>
+          <article class="project block--white">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
+              </div>
+            </div>
+          </article>
+          <article class="project block--white">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
+              </div>
+            </div>
+          </article>
+          <article class="project block--white">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
+              </div>
+            </div>
+          </article>
+          <article class="project block--white">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
+              </div>
+            </div>
+          </article>
+          <article class="project block--white">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
+              </div>
+            </div>
+          </article>
+          <article class="project block--white">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
+              </div>
+            </div>
+          </article>
+          <article class="project block--white">
+            <div class="project__color-line"></div>
+            <div class="project__content">
+              <h3 class="project__content--title">Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo qui illo delectus nihil esse nam consequatur laboriosam aspernatur voluptates adipisci, vitae quisquam fugiat porro minus eaque. Odio quos minus labore?</p>
+              <div class="project__buttons">
+                <img class="project__buttons__img" src="img/star.svg" alt="star" />
+                <img class="project__buttons__img" src="img/eye.svg" alt="watch" />
+                <img class="project__buttons__img" src="img/share.svg" alt="share" />
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-      <div id="main__sidebar">
-        <div id="sidebar__announcements">
-          <h2 class="announcements__title">Announcements</h2>
-          <div id="announcements__container">
-            <div class="announcement">
+      <!-- SIDEBAR -->
+      <aside id="main__sidebar">
+        <section id="sidebar__announcements">
+          <h2 id="announcements__title">Announcements</h2>
+          <div id="announcements__container" class="block--white">
+            <article class="announcement">
               <h3 class="announcement__title">Site Maintenance</h3>
               <p class="announcement__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
-            </div>
+            </article>
             <hr />
-            <div class="announcement">
+            <article class="announcement">
               <h3 class="announcement__title">Site Maintenance</h3>
               <p class="announcement__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
-            </div>
+            </article>
             <hr />
-            <div class="announcement">
+            <article class="announcement">
               <h3 class="announcement__title">Site Maintenance</h3>
               <p class="announcement__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste eligendi facere assumenda incidunt consequatur! Veritatis ipsa sint provident.</p>
-            </div>
+            </article>
           </div>
-        </div>
-        <div id="sidebar__trendings">
-          <h2>Trending</h2>
-          <div id="trendings__container">
-            <div class="trending">
+        </section>
+        <section id="sidebar__trendings">
+          <h2 id="trendings__title">Trending</h2>
+          <div id="trendings__container" class="block--white">
+            <article class="trending">
               <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
-              <div>
+              <div class="trending__text">
                 <span class="trending__user-name">@tegan</span>
                 <span class="trending__user-moto">World Peace Builder</span>
               </div>
-            </div>
-            <div class="trending">
+            </article>
+            <article class="trending">
               <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
-              <div>
+              <div class="trending__text">
                 <span class="trending__user-name">@tegan</span>
                 <span class="trending__user-moto">World Peace Builder</span>
               </div>
-            </div>
-            <div class="trending">
+            </article>
+            <article class="trending">
               <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
-              <div>
+              <div class="trending__text">
                 <span class="trending__user-name">@tegan</span>
                 <span class="trending__user-moto">World Peace Builder</span>
               </div>
-            </div>
-            <div class="trending">
+            </article>
+            <article class="trending">
               <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
-              <div>
+              <div class="trending__text">
                 <span class="trending__user-name">@tegan</span>
                 <span class="trending__user-moto">World Peace Builder</span>
               </div>
-            </div>
+            </article>
           </div>
-        </div>
-      </div>
+        </section>
+      </aside>
     </main>
   </body>
 </html>
