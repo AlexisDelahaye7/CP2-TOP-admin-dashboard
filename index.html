@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Admin dashboard from The Odin Project curriculum" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Admin Dashboard</title>
@@ -79,11 +80,17 @@
 
     <!-- HEADER -->
     <header class="header block--white">
-      <form class="search-container" method="GET" action="">
+      <div class="search-container">
         <button id="header__navbar-link"><img class="navbar__item__img" src="img/burger-menu.svg" alt="Dashboard" /></button>
-        <button type="submit"><img src="img/magnify.svg" alt="Search" class="icon--small" /></button>
-        <input type="text" />
-      </form>
+        <form class="search-form" method="GET" action="">
+          <label for="search-input">
+            <input id="search-input" type="text" />
+            <button type="submit">
+              <img src="img/magnify.svg" alt="Search" class="icon--small" />
+            </button>
+          </label>
+        </form>
+      </div>
       <div class="user-container">
         <img src="img/notifications.svg" class="icon--small" alt="Notifications" />
         <img src="img/user-icon.svg" alt="user icon" class="user-icon" />
@@ -93,7 +100,7 @@
         <img src="img/user-icon.svg" alt="user icon" id="welcome-user-icon" />
         <div class="welcome-container__text">
           <span id="welcome-container__greetings">Hi there,</span>
-          <h2 id="welcome-container__username">AlexisDelahaye7 (@AlexisDelahaye7)</h2>
+          <h2 id="welcome-container__username">Alexis <em>(@AlexisDelahaye7)</em></h2>
         </div>
       </div>
       <div class="interact-container">
@@ -107,7 +114,7 @@
     <main class="main">
       <!-- ARTICLES -->
       <div id="main__projects">
-        <h2 id="main__title">Your Projects</h2>
+        <h2 id="projects__title">Your Projects</h2>
         <div id="projects__container">
           <article class="project block--white">
             <div class="project__color-line"></div>
