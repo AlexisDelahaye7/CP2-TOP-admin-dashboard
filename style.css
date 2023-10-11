@@ -217,7 +217,7 @@ body {
   display: grid;
   grid-template:
     "main__projects main__sidebar"
-    / 5fr 2fr;
+    / 5fr minmax(300px, 2fr);
 }
 
 #projects__title,
@@ -330,12 +330,6 @@ article.trending {
   gap: calc(var(--block-padding) * 0.5);
 }
 
-.trending__user-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
 /* -- GLOBAL STYLES -- */
 
 .block--white {
@@ -433,6 +427,7 @@ article.trending {
 }
 
 .user-icon {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }

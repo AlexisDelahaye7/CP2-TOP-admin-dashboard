@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,46 +11,46 @@
   </head>
   <body>
     <!-- NAV -->
-    <nav class="navbar">
+    <aside class="navbar">
       <header id="navbar__header">
         <img class="navbar__item__img" src="img/grid.svg" alt="Dashboard" />
         <h1 class="navbar__item__name">Dashboard</h1>
       </header>
-      <main class="navbar__content">
+      <nav class="navbar__content">
         <ul class="navbar__content__first">
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/home.svg" alt="Home" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/home.svg" alt="Home" />
               <h2 class="navbar__item__name">Home</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/profile.svg" alt="Profile" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/profile.svg" alt="Profile" />
               <h2 class="navbar__item__name">Profile</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/messages.svg" alt="Messages" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/messages.svg" alt="Messages" />
               <h2 class="navbar__item__name">Messages</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/history.svg" alt="History" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/history.svg" alt="History" />
               <h2 class="navbar__item__name">History</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/tasks.svg" alt="Tasks" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/tasks.svg" alt="Tasks" />
               <h2 class="navbar__item__name">Tasks</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/communities.svg" alt="Communities" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/communities.svg" alt="Communities" />
               <h2 class="navbar__item__name">Communities</h2>
             </a>
           </li>
@@ -58,55 +58,55 @@
         <ul class="navbar__content__second">
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/settings.svg" alt="Settings" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/settings.svg" alt="Settings" />
               <h2 class="navbar__item__name">Settings</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/support.svg" alt="Support" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/support.svg" alt="Support" />
               <h2 class="navbar__item__name">Support</h2>
             </a>
           </li>
           <li class="navbar__item">
             <a href="#">
-              <img class="navbar__item__img" src="img/privacy.svg" alt="Privacy" class="icon--small" />
+              <img class="navbar__item__img icon--small" src="img/privacy.svg" alt="Privacy" />
               <h2 class="navbar__item__name">Privacy</h2>
             </a>
           </li>
         </ul>
-      </main>
-    </nav>
+      </nav>
+    </aside>
 
     <!-- HEADER -->
     <header class="header block--white">
-      <section class="search-container">
+      <div class="search-container">
         <button id="header__navbar-link"><img class="navbar__item__img" src="img/burger-menu.svg" alt="Dashboard" /></button>
-        <form class="search-form" method="GET" action="">
+        <form class="search-form" method="GET" action="#">
           <label for="search-input">
             <input id="search-input" type="text" />
-            <button type="submit">
-              <img src="img/magnify.svg" alt="Search" class="icon--small" />
-            </button>
           </label>
+          <button type="submit">
+            <img src="img/magnify.svg" alt="Search" class="icon--small" />
+          </button>
         </form>
-      </section>
-      <section class="user-container">
+      </div>
+      <div class="user-container">
         <button><img src="img/notifications.svg" class="icon--small" alt="Notifications" /></button>
-        <button><img src="img/user-icon.svg" alt="user icon" class="user-icon" /> <span class="user-container__fullname">Alexis Delahaye</span></button>
-      </section>
-      <section class="welcome-container">
+        <button><img src="img/user-icon.svg" alt="user icon" class="user-icon" /><span class="user-container__fullname">Alexis Delahaye</span></button>
+      </div>
+      <div class="welcome-container">
         <img src="img/user-icon.svg" alt="user icon" id="welcome-user-icon" />
         <div class="welcome-container__text">
           <span id="welcome-container__greetings">Hi there,</span>
           <h2 id="welcome-container__username">Alexis <em>(@AlexisDelahaye7)</em></h2>
         </div>
-      </section>
-      <section class="interact-container">
+      </div>
+      <div class="interact-container">
         <button>New</button>
         <button>Upload</button>
         <button>Share</button>
-      </section>
+      </div>
     </header>
 
     <!-- MAIN -->
@@ -298,31 +298,31 @@
           <h2 id="trendings__title">Trending</h2>
           <div id="trendings__container" class="block--white">
             <article class="trending">
-              <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
+              <img class="user-icon" src="img/user-icon.svg" alt="user icon" />
               <div class="trending__text">
-                <span class="trending__user-name">@tegan</span>
-                <span class="trending__user-moto">World Peace Builder</span>
+                <h3 class="trending__user-name">@tegan</h3>
+                <em class="trending__user-moto">World Peace Builder</em>
               </div>
             </article>
             <article class="trending">
-              <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
+              <img class="user-icon" src="img/user-icon.svg" alt="user icon" />
               <div class="trending__text">
-                <span class="trending__user-name">@tegan</span>
-                <span class="trending__user-moto">World Peace Builder</span>
+                <h3 class="trending__user-name">@tegan</h3>
+                <em class="trending__user-moto">World Peace Builder</em>
               </div>
             </article>
             <article class="trending">
-              <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
+              <img class="user-icon" src="img/user-icon.svg" alt="user icon" />
               <div class="trending__text">
-                <span class="trending__user-name">@tegan</span>
-                <span class="trending__user-moto">World Peace Builder</span>
+                <h3 class="trending__user-name">@tegan</h3>
+                <em class="trending__user-moto">World Peace Builder</em>
               </div>
             </article>
             <article class="trending">
-              <img class="trending__user-icon" src="img/user-icon.svg" alt="user icon" class="user-icon" />
+              <img class="user-icon" src="img/user-icon.svg" alt="user icon" />
               <div class="trending__text">
-                <span class="trending__user-name">@tegan</span>
-                <span class="trending__user-moto">World Peace Builder</span>
+                <h3 class="trending__user-name">@tegan</h3>
+                <em class="trending__user-moto">World Peace Builder</em>
               </div>
             </article>
           </div>
